@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
-    @article = Article.find(params[:id])
+    
   end
   # GET /articles/new
   def new
@@ -19,7 +19,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
-    @article = Article.find(params[:id])
+    
   end
 
   # POST /articles
@@ -39,7 +39,7 @@ class ArticlesController < ApplicationController
   # PATCH/PUT /articles/1
   # PATCH/PUT /articles/1.json
   def update
-    @article = Article.find(params[:id])
+   
     
     if @article.update(article_params )
       flash[:notice] = "Article was updated successfuly!"
@@ -52,7 +52,7 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1
   # DELETE /articles/1.json
   def destroy
-    @article = Article.find(params[:id])
+    
     @article.destroy
     flash[:notice] = "Article was deleted"
     redirect_to articles_path
@@ -63,7 +63,7 @@ class ArticlesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_article
-      
+      @article = Article.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
