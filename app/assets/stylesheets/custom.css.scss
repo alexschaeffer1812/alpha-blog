@@ -1,2 +1,49 @@
+$navbar-default-bg: #CD5550;
+
+#logo {
+    float: left;
+    font-size: 1.73em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#logo:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.center {
+    text-align: center;
+}
+.jumbotron {
+    background-image: asset-url("DSC_0145-Reduced-Size-Overlay.jpg");
+    background-size: cover;
+    height: 560px;
+}
+.jumbotron h1 {
+    color: #fff !important;
+    margin-bottom: 150px;
+}
+.btn-xlarge {
+    background-color: #cd554f !important;
+    border-color: #cd554f !important;
+    color: #fff !important;
+}
+
+footer {
+    border-top: 1px solid #eaeaea;
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+footer ul {
+    float: right;
+    list-style: none;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff !important;
+}
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
