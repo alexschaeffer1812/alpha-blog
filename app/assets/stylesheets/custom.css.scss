@@ -30,6 +30,10 @@ $navbar-default-bg: #CD5550;
     border-color: #cd554f !important;
     color: #fff !important;
 }
+.article-meta-details {
+    border-top: 1px solid #eaeaea;
+    margin-top: 15px;
+}
 .article-actions {
     border-top: 1px solid #eaeaea;
     padding-top: 5px;
@@ -46,6 +50,7 @@ $navbar-default-bg: #CD5550;
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 
 footer {
     border-top: 1px solid #eaeaea;
