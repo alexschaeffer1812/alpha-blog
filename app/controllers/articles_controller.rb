@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    @articles = Article.paginate(page: params[:page], per_page: 2)
   end
 
   # GET /articles/1
@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
   # POST /articles
   # POST /articles.json
   def create
-    debugger
+    
     @article = Article.new(article_params)
     @article.user = User.first
     if @article.save
