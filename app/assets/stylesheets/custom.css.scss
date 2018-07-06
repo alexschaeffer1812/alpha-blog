@@ -70,5 +70,16 @@ footer ul {
     padding-left: 0;
 }
 
+.badge {
+    background-color: #CEF6F5 !important;
+    text-transform: uppercase !important;
+    letter-spacing: -1px !important;
+    font-weight: bold !important;
+}
+
+.input_checkbox input {
+    width: auto !important;
+}
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
